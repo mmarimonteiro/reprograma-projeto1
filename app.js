@@ -1,10 +1,9 @@
 //require acessar um arquivo ou um biblioteca ./ arquivo principal
 //biblioteca conjunto de funcionalidades ou conjunto de códigos prontos para serem utilizados
 // readline-sync //lib (biblioteca) pra pegar imput no terminal
-
-const livros = require("./database") 
-
 const read = require("readline-sync")
+const buscarLivros = require("./controllers/buscarLivros")
+
 const resposta = read.question(`
 ================== Menu ==================
 
@@ -15,5 +14,21 @@ const resposta = read.question(`
 
 5 - SAIR
 
-Digite um número de [1-5]: 
+Digite um numero de [1-5]: 
 `)
+
+switch (resposta){
+    case "1":
+    buscarLivros()
+    //chamar a função bucarLivros
+    break
+    
+    case "2":
+    //chamar a função ListarLivrosOrdenados
+    break
+
+
+    default:
+        console.log("fim do algoritmo")
+        break
+}
