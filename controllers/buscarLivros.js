@@ -19,7 +19,7 @@ const buscarLivros = () => {
 
         if (confirmacao === "S") {
             const livrosFiltrados = livros.filter(livro => livro.categoria === inputCategoria)
-            console.log(livrosFiltrados)
+            console.log(livrosFiltrados) //.log vai aparecer o objeto e .table numa tabela
         }
     } 
 }
