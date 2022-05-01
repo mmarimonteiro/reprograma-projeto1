@@ -46,7 +46,7 @@ const livros = [
     {
       nome: 'Dororidade',
       categoria: 'feminismo',
-      paginas: 98,
+      paginas: 198,
       recomenda: true,
       leu: true
     },

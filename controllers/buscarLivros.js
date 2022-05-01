@@ -25,4 +25,3 @@ const buscarLivros = () => {
 }
 
 module.exports = buscarLivros
-

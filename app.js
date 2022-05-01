@@ -3,6 +3,9 @@
 // readline-sync //lib (biblioteca) pra pegar imput no terminal
 const read = require("readline-sync")
 const buscarLivros = require("./controllers/buscarLivros")
+const ordenarLivros = require("./controllers/listarLivrosOrdenados")
+const recomendarLivros = require("./controllers/listarRecomendados")
+const listaNaoLidos = require("./controllers/listarLivrosNaoLidos")
 
 const resposta = read.question(`
 ================== Menu ==================
@@ -24,9 +27,17 @@ switch (resposta){
     break
     
     case "2":
+    ordenarLivros()
     //chamar a função ListarLivrosOrdenados
     break
 
+    case "3":
+    recomendarLivros()
+    break
+
+    case "4":
+    listaNaoLidos()
+    break
 
     default:
         console.log("fim do algoritmo")
